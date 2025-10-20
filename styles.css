@@ -1,0 +1,143 @@
+
+/* no tag selects every single element */
+body{
+    font-family:'Courier New', Courier, monospace;
+    color:black;
+    background-color: #456990;
+    max-width: 120rem;
+    margin: 5rem auto 5rem auto;
+}
+/* use a . to select a class */
+.experience{
+    justify-content: center;
+    flex-wrap:wrap;
+    text-align: center;
+    max-width: 30rem;
+    border: white;
+    border-radius: 20%;
+    margin: auto 3rem auto 3rem;
+    
+}
+
+
+
+#experiences{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  
+}
+
+/*  use a # to select based on id */
+#hobbies{
+    font-size:xx-large;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    justify-content: center;
+    
+}
+
+.hobby img{
+    
+    border-style:solid;
+    border-color:black;
+    width:25rem;
+    height:15rem;
+    flex-wrap: wrap;
+
+}
+img{
+    transition: 0.5s;
+}
+img:hover{
+    border-color: white;
+    z-index: 2;
+    transform: scale(1.2);
+    box-shadow: 0 0 15px white;
+}
+.hobby{
+    margin: 3rem auto 3rem auto;
+    text-align: center;
+}
+nav ul li{
+    list-style: none;
+    padding:1rem;
+
+}
+
+nav ul li:hover{
+    cursor:pointer;
+    color: white;
+}
+
+nav ul {
+    display:flex;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+
+#hero{
+    display: flex;
+    justify-content: center;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+hr{
+    width:50%;
+    border-radius: 60%
+}
+
+.hobby, h2 {
+    text-align: center;
+    margin: 1rem;
+    color:white;
+}
+
+img{
+    border-width: 2px;
+    border-radius: 20%;
+}
+
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    color:#067BC2;
+}
+
+.headshot{
+    width: 18rem;
+    height: auto;
+    border-color: white;
+    border-width: 2px;
+    justify-content: center;
+    border-radius: 20%;
+    margin: auto 1.5rem auto;
+    
+    
+}
+
+.intro{
+    justify-content: center;
+}
+
+.intro h1{
+    color:white
+}
+
+
+
+/* .class <tag> selects all of a given tag that's INSIDE a class */
+
+/* .inner-class, outer-class affects the elements of both classes */
+
+/* .inner-class > <tag> selects all of given element one generation deep from the class */
+
+/* .inner-class#my-id chains the selectors to only select elements that have all wanted classes/ids */
