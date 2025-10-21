@@ -1,139 +1,261 @@
-
 /* no tag selects every single element */
 body{
-    font-family:'Courier New', Courier, monospace;
+    font-family:"Trebuchet MS", Helvetica, sans-serif, monospace;
     color:black;
-    background-color: #456990;
-    max-width: 120rem;
-    margin: 5rem auto 5rem auto;
+    margin: 0;
+    padding-top: 6rem;
 }
-/* use a . to select a class */
-.experience{
-    justify-content: center;
-    flex-wrap:wrap;
-    text-align: center;
-    max-width: 30rem;
-    border: white;
-    border-radius: 20%;
-    margin: auto 3rem auto 3rem;
-    
-}
-
-
-
-#experiences{
-    display:flex;
-    text-align: center;
-    justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
-  
-}
-
-/*  use a # to select based on id */
-#hobbies{
-    font-size:xx-large;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2rem auto;
-    justify-content: center;
-    
-}
-
-.hobby img{
-    
-    border-style:solid;
-    border-color:black;
-    width:25rem;
-    height:15rem;
-    flex-wrap: wrap;
-
-}
-img{
-    transition: 0.5s;
-}
-img:hover{
-    border-color: white;
-    z-index: 2;
-    transform: scale(1.2);
-    box-shadow: 0 0 15px white;
-}
-.hobby{
-    margin: 3rem auto 3rem auto;
-    text-align: center;
-}
-nav ul li{
-    list-style: none;
-    padding:1rem;
-
-}
-
-nav ul li:hover{
-    cursor:pointer;
-    color: white;
-}
-
-nav ul {
-    display:flex;
-    justify-content: flex-end;
-    width: 80%;
-}
-
-
-#hero{
-    display: flex;
-    justify-content: center;
-    margin: 4rem auto;
-    padding: 0 1rem;
-    flex-wrap: wrap;
-}
-
-hr{
-    width:50%;
-    border-radius: 60%
-}
-
-.hobby, h2 {
-    text-align: center;
-    margin: 1rem;
-    color:white;
-}
-
-img{
-    border-width: 2px;
-    border-radius: 20%;
-}
-
-a{
+*{
     text-decoration: none;
-
 }
-a:hover{
-    color:#067BC2;
-}
-
-.headshot{
-    width: 18rem;
+#header{
+    background: #326771;
+    padding: 2rem;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
     height: auto;
-    border-color: white;
-    border-width: 2px;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    margin: 0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: box-shadow 0.3s ease;
+}
+#header:hover{
+    box-shadow: 0 0 25px rgba(0,0,0,0.7);
+}
+.navdiv{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a{
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;   
+    transition:0.3s;
+}
+.logo a:hover{
+    color:#F2D492;
+}
+.navdiv li{
+    list-style: none;
+    display:inline-block;
+}
+.navdiv li a{
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 3rem;
+    transition:0.4s
+}
+.navdiv a:hover{
+    color:#F2D492;
+}
+
+/* Intro Section */
+#intro{
+    background: #A1CDF4;
+    padding: 8rem 2rem 4rem 2rem;
+}
+.intro-flex {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    border-radius: 20%;
-    margin: auto 1.5rem auto;
-    
-    
+    max-width: 75rem; /* ~1200px */
+    margin: 0 auto;
 }
 
-.intro{
+.intro-head, .intro-body {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0 3rem;
+}
+.intro-body {
+    flex-direction: column;
+    align-items: flex-start;
+}   
+
+.intro-divider {
+    width: 0.2rem;
+    height: 7.5rem;
+    background: #B8B08D;
+    border-radius: 1rem;
+    flex-shrink: 0;
+}
+
+
+.intro-head img{
+    border: 0.4rem solid #B8B08D;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Hobbies Section */
+#hobbies {
+    padding: 4rem 2rem;
+    background: #ffffff;
+    text-align: center;
+}
+
+h2 {
+    color: #326771;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#hobbies hr , #experience hr {
+    width: 6rem;
+    height: 0.3rem;
+    background: #B8B08D;
+    border: none;
+    margin: 0 auto 1.5rem auto;
+    transition: width 0.3s ease-in-out;
+    
+}
+#hobbies:hover hr , #experience:hover hr {
+    width: 12rem;
+}
+.hobby-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+.hobby-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 68.75rem; /* ~1100px */
+    margin: 0 auto; /* center the list */
+    padding: 0 1rem;
+}
+
+.hobby {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 56.25rem; /* ~900px */
+    margin: 0 auto; 
+    min-height: 20vh; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hobby:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.hobby-media {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.intro h1{
-    color:white
+.hobby-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hobby-img {
+    width: 100%;
+    max-width: 13.75rem; /* ~220px */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.hobby-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #326771;
+    margin-bottom: 1rem;
+}
+
+.hobby-description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+
+/* Experience Section */
+#experience {
+    padding: 4rem 2rem;
+    background: #f0f0f0;
+    text-align: center;
+}
+.experience-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 68.75rem; /* ~1100px */
+    margin: 0 auto; /* center the list */
+    padding: 0 1rem;
+}
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 20rem;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.experience-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.experience-logo {
+    width: 100%;
+    max-width: 8rem;
+    height: auto;
+    object-fit: contain;
+}
+
+.experience-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
 }
 
 
 
+
+/* CSS Comments */
 /* .class <tag> selects all of a given tag that's INSIDE a class */
 
 /* .inner-class, outer-class affects the elements of both classes */

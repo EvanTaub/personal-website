@@ -7,65 +7,115 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    
-    <nav>
+<!-- Navigation Header -->
+<nav id="header">
+    <div class="navdiv">
+    <div class="logo"><a href="#">Evan Taubenfeld</a></div>
         <ul>
-            <li>Home</li>
-            <a href="contact.html"><li>Contact</li></a>
+            <li><a href="https://www.linkedin.com/in/evan-taubenfeld-6b2280307/">LinkedIn</a></li>
+            <li><a href="https://github.com/EvanTaub">Github</a></li>
+            <li><a href="#">Email</a></li>
         </ul>
-    </nav>
-    
-    <div id = "hero">
-        <div>
-            <img class = "headshot" src="Headshot.jpg" alt="Picture of Evan">
+    </div>
+</nav>
+
+<!-- Intro Section -->
+
+<div id="intro">
+    <div class="intro-flex">
+        <div class="intro-head">
+            <img src="headshot.jpg" alt="Headshot Image of Evan Taubenfeld">
         </div>
-        <div class = "intro">
-            <h1>Evan Taubenfeld</h1>
-            <h3>In Bootcamp :]</h3>
-            <h4>Just having fun making this website!</h4>
+        <div class="intro-divider"></div>
+        <div class="intro-body">
+            <h1>Welcome to My Personal Website</h1>
+            <p>This is a brief introduction about myself. Feel free to explore my projects and get in touch!</p>
         </div>
     </div>
+</div>
 
-    <hr>
-        <!-- Hobbies Section -->
+<!-- Hobbies Section -->
+<div id="hobbies">
     <h2>Hobbies</h2>
-    <div id = "hobbies">
-            <div class = "hobby">
-                <h3>Video Games</h3>
-                <img  id = "hobby1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvJUJZMPKxlVWeNGBpgPDW8aRX681zo3pg4g&s" alt="Elden Ring Game Cover">
+    <hr>
+
+    <div class="hobby-list">
+        <article class="hobby">
+            <div class="hobby-media">
+                <img src="assets/hobby1.jpg" alt="Photography" class="hobby-img">
             </div>
-            <div class = "hobby">
-                <h3>Playing With My Dogs</h3>
-                <img src="https://images.squarespace-cdn.com/content/v1/5abef86f7e3c3a242ca0bd46/7bb5d762-74c3-445b-97d3-4b40f5038e7b/0Y2A6620.jpg" alt="French Bulldog Wearing a Chain">
+            <div class="hobby-body">
+                <h3 class="hobby-title">Photography</h3>
+                <p class="hobby-description">I enjoy landscape and portrait photography — capturing moments and playing with light.</p>
             </div>
-            <div class = "hobby">
-                <h3>Gym</h3>
-                <img src="https://trainingstation.co.uk/cdn/shop/articles/Jordan_flat_bed_chest_press_1157x.png?v=1725100070" alt="Image of a Benchpress">
+        </article>
+
+        <article class="hobby">
+            <div class="hobby-media">
+                <img src="https://cdn.mos.cms.futurecdn.net/bByhky6jeMXqwxkPV9DZsg-1920-80.jpg" alt="Guitar" class="hobby-img">
             </div>
+            <div class="hobby-body">
+                <h3 class="hobby-title">Guitar</h3>
+                <p class="hobby-description">Playing guitar and writing songs is a big part of my creative life.</p>
+            </div>
+        </article>
+
+        <article class="hobby">
+            <div class="hobby-media">
+                <img src="assets/hobby3.jpg" alt="Hiking" class="hobby-img">
+            </div>
+            <div class="hobby-body">
+                <h3 class="hobby-title">Hiking</h3>
+                <p class="hobby-description">I love getting outdoors and hiking — it clears my head and keeps me active.</p>
+            </div>
+        </article>
+
     </div>
 
+</div>
+
+<!-- Experience Section -->
+<div id="experience">
+    <h2>Experience</h2>
     <hr>
-    <!-- Experiences -->
-     <h2>Experiences</h2>
-     <div id = "experiences">
-        <div class="experience">
-            <h3>Bootcamp</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
 
-        </div>
-        <div class="experience">
-            <h3>Machine Learning Internship</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-        </div>
-        <div class="experience">
-            <h3>Free Python Tutor</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, eos. Magnam iste atque architecto eius dicta doloribus blanditiis culpa dolore dolor deserunt laboriosam veritatis tempora repellendus quaerat, placeat hic vel.</p>
-        </div>
-     </div>
-    <footer>
+    <div class="experience-list">
+        <article class="experience">
+                <div class="experience-media">
+                    <img src="assets/company1logo.png" alt="TechCorp Logo" class="experience-logo">
+                </div>
+                <div class="experience-body">
+                    <h3 class="experience-title">Software Engineer at TechCorp</h3>
+                    <p class="experience-duration">June 2022 - Present</p>
+                    <p class="experience-description">Working on developing scalable web applications and improving user experience.</p>
+                </div>
+        </article>
 
-    </footer>
+        <article class="experience">
+                <div class="experience-media">
+                    <img src="assets/company1logo.png" alt="TechCorp Logo" class="experience-logo">
+                </div>
+                <div class="experience-body">
+                    <h3 class="experience-title">Software Engineer at TechCorp</h3>
+                    <p class="experience-duration">June 2022 - Present</p>
+                    <p class="experience-description">Working on developing scalable web applications and improving user experience.</p>
+                </div>
+        </article>
+
+        <article class="experience">
+                <div class="experience-media">
+                    <img src="assets/company1logo.png" alt="TechCorp Logo" class="experience-logo">
+                </div>
+                <div class="experience-body">
+                    <h3 class="experience-title">Software Engineer at TechCorp</h3>
+                    <p class="experience-duration">June 2022 - Present</p>
+                    <p class="experience-description">Working on developing scalable web applications and improving user experience.</p>
+                </div>
+        </article>
+
+    </div>
+
+
 
 </body>
 </html>
